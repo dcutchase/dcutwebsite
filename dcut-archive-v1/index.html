@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#020302" />
+  <title>DCUT — Driven Creatives United Together</title>
+  <meta name="description" content="DCUT — Driven Creatives United Together. Film, music, artists, stories and archive." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="noise"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="DCUT Home">DCUT</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">CATEGORIES</a>
+      <a href="#archive">ARCHIVE</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <button id="soundToggle" class="pixel-button" aria-pressed="false">SFX: OFF</button>
+  </header>
+
+  <main id="top">
+    <section class="hero scene" data-scene="0">
+      <div class="hero-copy">
+        <p class="eyebrow">DCUT SYSTEM // PHX-AZ // ONLINE</p>
+        <h1>DRIVEN<br/>CREATIVES<br/>UNITED<br/>TOGETHER</h1>
+        <p class="hero-sub">A visual world for film, photography, design, and everything around the process.</p>
+        <a class="pixel-cta" href="#work">ENTER DCUT <span>↓</span></a>
+      </div>
+      <div class="hero-status">
+        <span>ROLL_001</span><span>FRAME_000</span><span>REC ●</span>
+      </div>
+    </section>
+
+    <div class="reel-stage" aria-hidden="true">
+      <div class="reel-glow"></div>
+      <div id="reel" class="reel">
+        <div class="reel-face">
+          <span class="hub"></span>
+          <span class="hole h1"></span><span class="hole h2"></span><span class="hole h3"></span>
+          <span class="hole h4"></span><span class="hole h5"></span><span class="hole h6"></span>
+        </div>
+      </div>
+      <div class="film-lead"></div>
+    </div>
+
+    <section id="work" class="section scene" data-scene="1">
+      <div class="section-head">
+        <p class="eyebrow">MAIN CATEGORIES // CLEAN SIGNAL</p>
+        <h2>CHOOSE A PATH.</h2>
+        <p>The interface stays 16-bit. The actual work stays clean.</p>
+      </div>
+      <div id="featuredGrid" class="featured-grid"></div>
+    </section>
+
+    <section id="archive" class="section archive scene" data-scene="2">
+      <div class="section-head split-head">
+        <div>
+          <p class="eyebrow">DCUT INDEX // CATEGORIES</p>
+          <h2>THE MAIN ARCHIVE</h2>
+        </div>
+        <div class="archive-meta">
+          <span id="archiveCount">000 CATEGORIES</span>
+          <span>STATUS: OPEN</span>
+        </div>
+      </div>
+      <div class="archive-layout">
+        <div class="film-column">
+          <div id="filmStrip" class="film-strip"></div>
+        </div>
+        <div id="archiveList" class="archive-list"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about scene" data-scene="3">
+      <div class="about-grid">
+        <div>
+          <p class="eyebrow">ABOUT // DCUT</p>
+          <h2>BUILDING WORLDS AROUND CREATIVES.</h2>
+        </div>
+        <div class="about-copy">
+          <p>DCUT — Driven Creatives United Together — is a creative collective and film archive focused on artists, music, visual storytelling, and community.</p>
+          <p>The goal is simple: make the gap between underground talent and the industry feel smaller, clearer, and more attainable.</p>
+          <div class="socials">
+            <a href="https://www.instagram.com/dcut.chase/" target="_blank" rel="noreferrer">INSTAGRAM @DCUT.CHASE ↗</a>
+            <a href="https://www.youtube.com/@dcut.mp4" target="_blank" rel="noreferrer">YOUTUBE @DCUT.MP4 ↗</a>
+            <a href="https://www.dcut.website" target="_blank" rel="noreferrer">DCUT.WEBSITE ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact scene" data-scene="4">
+      <p class="eyebrow">END OF ROLL // CONTACT</p>
+      <h2>MAKE SOMETHING<br/>WORTH ARCHIVING.</h2>
+      <a class="pixel-cta" href="mailto:hello@dcut.website">START A PROJECT ↗</a>
+      <p class="tiny-note">Change the email in <code>site-data.js</code> to your real contact address.</p>
+    </section>
+  </main>
+
+  <div id="cursorFrame" class="cursor-frame" aria-hidden="true"><span>FRAME</span></div>
+  <script src="site-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
